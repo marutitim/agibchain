@@ -131,6 +131,11 @@ span.input-group-addon i {
   text-align: center; 
 
 }
+.abc-form-control {
+    height: auto!important;
+    padding: 8px 12px !important;
+    width: 100%;
+}
 #agribchain-contact{
     
     font-family: 'verdana','Teko', sans-serif;
