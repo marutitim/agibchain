@@ -1,0 +1,514 @@
+/*******************************************************
+*********************  OWL
+*******************************************************/
+/* 
+ *  Core Owl Carousel CSS File
+ *  v1.3.3
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* display none until init */
+.owl-carousel{
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+  
+.owl-carousel .owl-item{
+  float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+  cursor: pointer;
+}
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+.owl-navigation .next,
+.owl-navigation .prev{
+  background: rgba(0,0,0,.7);
+  border-radius: 100%;
+  color: #ffffff;
+	cursor: pointer;
+	display: block;
+	width:  55px;
+	height: 55px;
+	margin-top: -20px;
+	position: absolute;
+	top: 50%;
+}
+.owl-navigation .next{
+	right: 5px;
+}
+.owl-navigation .prev{
+  left: 5px;
+}
+.owl-navigation .next:after,
+.owl-navigation .prev:after{
+  display: block;
+  width:  55px;
+  height: 55px;
+  line-height: 55px;
+  font-family: 'icomoon';
+  font-size: 2em;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  position: absolute;
+  text-align: center;
+  left: 0;
+  top: 0;
+}
+.owl-navigation .next:after{
+  content: "\e6d0";
+}
+.owl-navigation .prev:after{
+  content: "\e6cd";
+}
+/*******************************************************
+*********************  FLEXSLIDER
+*******************************************************/
+.flex-container a:active,.flexslider a:active,.flex-container a:focus,.flexslider a:focus{
+	outline:none;
+}
+
+.slides,.flex-control-nav,.flex-direction-nav{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+.flexslider img{
+  margin: 0;
+}
+
+.flexslider .slides>li{
+	display:none;
+	-webkit-backface-visibility:hidden;
+}
+
+.flexslider .slides img{
+	max-width:100%;display:block;
+}
+
+.flex-pauseplay span{
+	text-transform:capitalize;
+}
+
+.slides:after{
+	content:".";
+	display:block;
+	clear:both;
+	visibility:hidden;
+	line-height:0;
+	height:0;
+}
+
+html[xmlns] .slides{
+	display:block;
+}
+
+* html .slides{
+	height:1%;
+}
+
+.no-js .slides>li:first-child{
+	display:block;
+}
+
+.flexslider{
+	position:relative;
+	zoom:1;
+}
+
+.flexslider .slides{
+	zoom:1;
+}
+
+.flexslider .slides>li{
+	position:relative;
+}
+
+.flex-container{
+	zoom:1;
+	position:relative;
+}
+
+.flex-caption{
+	filter:alpha(opacity=80); /* IE patch */
+	zoom:1;
+}
+
+.flex-caption{
+	width:40%;
+	padding:15px 20px;
+	margin:0;
+	position:absolute;
+	left:20px;
+	top:35px;
+	color:#fff;
+	line-height:25px;
+}
+.flex-caption h1{
+	color: #ffffff;
+	font-size: 40px;
+	text-shadow: 0px 1px 3px rgba(0,0,0,0.2);
+}
+.flex-caption p{
+	font-size: 18px;
+	text-shadow: 0px 1px 3px rgba(0,0,0,0.5);
+}
+.flex-caption span {
+	display:block;
+	padding:0 0 7px 0;
+}
+.flex-direction-nav li{
+	width: 33px;
+	height: 100%;
+	display: block;
+}
+.flex-direction-nav li a{
+	background: rgba(0,0,0,.9);
+  border-radius: 3px;
+	position: absolute;
+	width:  40px;
+	height: 40px;
+	display: block;
+	text-indent: -9999em;
+	margin: -20px 0 0 0;
+}
+.flex-direction-nav li a.flex-prev{
+	background-image: url('../images/media/left-arrow.png');
+	top: 50%;
+	left: 15px;
+}
+.flex-direction-nav li a.flex-next{
+	background-image: url('../images/media/right-arrow.png');
+	top: 50%;
+	right: 15px;
+}
+.flex-control-nav{
+	width:100%;
+	position:relative;
+	bottom: 0;
+	text-align:center;
+  margin-top: 40px;
+}
+
+.flex-control-nav li{
+	margin:0 0 0 8px;
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+}
+
+.flex-control-nav li:first-child{
+	margin:0;
+}
+
+.flex-control-nav li a{
+  border: 2px solid #222222;
+	border-radius: 100%;
+	width: 14px;
+	height:14px;
+	background: transparent;
+	display:block;
+	cursor:pointer;
+	text-indent:-9999px;
+}
+.flex-control-nav li a.flex-active{
+	background: #222222;
+}
+.flex-trans .flex-control-nav li a{
+  border: 2px solid #ffffff;
+}
+.flex-trans .flex-control-nav li a.flex-active{
+  background: #ffffff;
+}
+.flex-control-nav li>img.flex-active{
+  opacity: .8;
+}
+/*******************************************************
+********************* ISOTOP
+*******************************************************/
+
+/* Isotope Filtering
+======================================================*/
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:         top, left, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+/*******************************************************
+********************* TABBY 
+*******************************************************/
+/*!
+ * Tabby v9.0.0: Simple, mobile-first toggle tabs.
+ * (c) 2015 Chris Ferdinandi
+ * MIT License
+ * http://github.com/cferdinandi/tabby
+ */
+
+/*  Hide tab navigation by default */
+/* line 2, /Users/cferdinandi/Sites/tabby/src/sass/components/_tabby.scss */
+.tabs {
+  display: none;
+  visibility: hidden;
+}
+
+/*  Display tab navigation if javascript enabled.
+ *  This requires on the included js-accessibility.js-tabby script. */
+/* line 9, /Users/cferdinandi/Sites/tabby/src/sass/components/_tabby.scss */
+.js-tabby .tabs {
+  display: block;
+  visibility: visible;
+}
+
+/*  Force browser to show a pointer on tab navigation. */
+/* line 16, /Users/cferdinandi/Sites/tabby/src/sass/components/_tabby.scss */
+.tabs a,
+.tabs button {
+  cursor: pointer;
+}
+
+/*  Hide tab content if javascript is enabled. */
+/* line 21, /Users/cferdinandi/Sites/tabby/src/sass/components/_tabby.scss */
+.js-tabby .tabs-pane {
+  display: none;
+  visibility: hidden;
+}
+
+/*  Show tab content when active class is added.
+ *  This class is added via javascript. */
+/* line 28, /Users/cferdinandi/Sites/tabby/src/sass/components/_tabby.scss */
+.tabs-pane.active {
+  display: block;
+  visibility: visible;
+}
+
+/* Clearfix */
+/* line 35, /Users/cferdinandi/Sites/tabby/src/sass/components/_tabby.scss */
+.tabs:before,
+.tabs:after {
+  display: table;
+  content: "";
+}
+
+/* line 40, /Users/cferdinandi/Sites/tabby/src/sass/components/_tabby.scss */
+.tabs:after {
+  clear: both;
+}
+/*******************************************************
+********************* TEXT ROTATOR
+*******************************************************/
+.rotating {
+  display: inline-block;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transform: rotateX(0) rotateY(0) rotateZ(0);
+  -moz-transform: rotateX(0) rotateY(0) rotateZ(0);
+  -ms-transform: rotateX(0) rotateY(0) rotateZ(0);
+  -o-transform: rotateX(0) rotateY(0) rotateZ(0);
+  transform: rotateX(0) rotateY(0) rotateZ(0);
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-origin-x: 50%;
+}
+
+.rotating.flip {
+  position: relative;
+}
+
+.rotating .front, .rotating .back {
+  left: 0;
+  top: 0;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.rotating .front {
+  position: absolute;
+  display: inline-block;
+  -webkit-transform: translate3d(0,0,1px);
+  -moz-transform: translate3d(0,0,1px);
+  -ms-transform: translate3d(0,0,1px);
+  -o-transform: translate3d(0,0,1px);
+  transform: translate3d(0,0,1px);
+}
+
+.rotating.flip .front {
+  z-index: 1;
+}
+
+.rotating .back {
+  display: block;
+  opacity: 0;
+}
+
+.rotating.spin {
+  -webkit-transform: rotate(360deg) scale(0);
+  -moz-transform: rotate(360deg) scale(0);
+  -ms-transform: rotate(360deg) scale(0);
+  -o-transform: rotate(360deg) scale(0);
+  transform: rotate(360deg) scale(0);
+}
+
+
+
+.rotating.flip .back {
+  z-index: 2;
+  display: block;
+  opacity: 1;
+  
+  -webkit-transform: rotateY(180deg) translate3d(0,0,0);
+  -moz-transform: rotateY(180deg) translate3d(0,0,0);
+  -ms-transform: rotateY(180deg) translate3d(0,0,0);
+  -o-transform: rotateY(180deg) translate3d(0,0,0);
+  transform: rotateY(180deg) translate3d(0,0,0);
+}
+
+.rotating.flip.up .back {
+  -webkit-transform: rotateX(180deg) translate3d(0,0,0);
+  -moz-transform: rotateX(180deg) translate3d(0,0,0);
+  -ms-transform: rotateX(180deg) translate3d(0,0,0);
+  -o-transform: rotateX(180deg) translate3d(0,0,0);
+  transform: rotateX(180deg) translate3d(0,0,0);
+}
+
+.rotating.flip.cube .front {
+  -webkit-transform: translate3d(0,0,100px) scale(0.9,0.9);
+  -moz-transform: translate3d(0,0,100px) scale(1,1);
+  -ms-transform: translate3d(0,0,100px) scale(1,1);
+  -o-transform: translate3d(0,0,100px) scale(1,1);
+  transform: translate3d(0,0,100px) scale(1,1);
+}
+
+.rotating.flip.cube .back {
+  -webkit-transform: rotateY(180deg) translate3d(0,0,0) scale(0.9,0.9);
+  -moz-transform: rotateY(180deg) translate3d(0,0,0) scale(1,1);
+  -ms-transform: rotateY(180deg) translate3d(0,0,0) scale(1,1);
+  -o-transform: rotateY(180deg) translate3d(0,0,0) scale(1,1);
+  transform: rotateY(180deg) translate3d(0,0,0) scale(1,1);
+}
+
+.rotating.flip.cube.up .back {
+  -webkit-transform: rotateX(180deg) translate3d(0,0,0) scale(0.9,0.9);
+  -moz-transform: rotateX(180deg) translate3d(0,0,0) scale(1,1);
+  -ms-transform: rotateX(180deg) translate3d(0,0,0) scale(1,1);
+  -o-transform: rotateX(180deg) translate3d(0,0,0) scale(1,1);
+  transform: rotateX(180deg) translate3d(0,0,0) scale(1,1);
+}

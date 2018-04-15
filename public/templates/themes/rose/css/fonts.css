@@ -1,0 +1,58 @@
+/*******************************************************
+********************* FONTS
+*******************************************************/
+body,
+.recent-product-title,
+.blog-section-article-title,
+.section-title-m{
+	font-family: verdana,'Open Sans', sans-serif, Arial, 'Tahoma';
+}
+/*
+button,
+.rev-big-cap,
+.spo-subtitle,
+.about-subtitle,
+.quote p,
+.quote-slider ul li p,
+.quote-slider-trans ul li p,
+h1, h2, h3, h4, h5,
+.pricing-table-title,
+.section-subtitle,
+.spo-intro-heading .spo-intro-subtitle{
+	font-family: Verdana,'Raleway', sans-serif, Arial, 'Tahoma';
+}
+*/
+h1, h2, h3, h4, h5,
+.blog-article-title,
+.blog-listed-title,
+.blog-article-quote-author,
+.blog-article-link .link,
+.blog-articles-control,
+.blog-listed-media .article-date,
+.article-comments-count,
+.comment-form-title,
+.feature-title,
+.title-quote,
+.quote-w-author,
+.about-subtitle,
+.counter-item-text,
+.heading-page-title,
+.latest-post-title,
+.m-team-member-role,
+.m-link-section-title,
+.portfolio-item-cats,
+.intro-huge-title,
+.intro-heading-page-title,
+.portfolio-filter li a,
+.section-title,
+.section-subtitle-m,
+.search-modal-wrap input,
+.sidebar-widget-title,
+.widget-blog-author,
+.footer-widget .widget-title,
+.primary-navigation>ul>li>a,
+.responsive-navigation,
+.blog-article .blog-article-nav-item a
+{
+	font-family: Verdana, 'Oswald', sans-serif, Arial,'Tahoma';
+}

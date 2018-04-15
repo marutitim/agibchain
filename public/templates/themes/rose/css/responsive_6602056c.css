@@ -1,0 +1,408 @@
+@media only screen and (max-width : 1480px) {
+	.portfolio-container-full-6 .portfolio-item {
+		width: 25%;
+	}
+}
+@media only screen and (max-width : 1200px) {
+	.portfolio-container-full-5 .portfolio-item {
+		width: 25%;
+	}
+}
+@media only screen and (max-width : 1024px) {
+	.no-tab-view{
+		display: none;
+	}
+	.container,
+	.container-fluid{
+		padding: 0 20px;
+	}
+	/*******************************************************
+	********************* Header
+	*******************************************************/
+	header {
+		position: relative;
+	}
+	.primary-navigation,
+	.tool-navigation{
+		display: none;
+	}
+	.responsive-trigger {
+		display: block;
+	}
+	header.transparent .logo{
+		background: transparent url('../images/logo2@x.png') no-repeat;
+		background-size: 100%;
+	}
+	header.black-header{
+		background: #222222;
+	}
+	header.black-header .logo{
+		background: transparent url('../images/logo-white2@x.png') no-repeat;
+		background-size: 100%;
+	}
+	.border-body header{
+		top: 0px;
+		position: relative;
+		padding: 0;
+	}
+	/*******************************************************
+	********************* INTRO
+	*******************************************************/
+	.intro-title{
+		font-size: 2.5em;
+	}
+	.intro-subtitle{
+		font-size: 1.4em;
+	}
+	/*******************************************************
+	********************* CONTENT
+	*******************************************************/
+	.content {
+		width: 100%;
+		float: left;
+	}
+	/*******************************************************
+	********************* BLOG
+	*******************************************************/
+	.blog-grid-article{
+		width: 50%;
+	}
+	.blog-carousel-title{
+		font-size: 1.2em;
+		margin-top: 10%;
+	}
+	.blog-sidebar{
+	}
+	.blog-article-comments{
+		margin-bottom: 20px;
+	}
+	.sidebar-widgets{
+		padding-left: 0;
+	}
+	.blog-article-masonry{
+		width: 48%;
+	}
+	/*******************************************************
+	********************* SERVICES
+	*******************************************************/
+	.services-container{
+		width: 48%;
+		margin-left: 1%;
+		margin-right: 1%;  
+	}
+	/*******************************************************
+	********************* PORTFOLIO
+	*******************************************************/
+	.portfolio-container .portfolio-item,
+	.portfolio-gutters-4 .portfolio-item,
+	.portfolio-container-full-5 .portfolio-item,
+	.portfolio-container-full-6 .portfolio-item {
+		width: 49%;
+	}
+	/*******************************************************
+	********************* CONTACT
+	*******************************************************/
+	.contact-form-wrap{
+		margin: 20px 0;
+	}
+	.input-container,
+	.comment-reply .input-container{
+		width: 100%;
+		margin-right: 0;
+	}
+	/*******************************************************
+	********************* FOOTER
+	*******************************************************/
+	.footer-widget{
+		padding: 0 30px;
+	}
+	/*******************************************************
+	********************* SHORTCODES
+	*******************************************************/
+	.m-deso-odd div[class^="col-md"]:nth-child(odd){
+		margin-top: 0;
+	}
+	.m-deso-cascade div[class^="col-md"]:nth-child(n+1){
+		margin-top: 0;
+	}
+	.m-deso-cascade div[class^="col-md"]:nth-child(n+2){
+		margin-top: 0;
+	}
+	/* MHW */
+	.m-mhw{
+		height: auto;
+	}
+	.m-mhw-content{
+		padding: 60px 10px;
+	}
+	/* PAGINATION */
+	.pagination{
+		margin-bottom: 20px;
+	}
+	/*******************************************************
+	********************* MODULES
+	*******************************************************/
+	.input-col{
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+	.heading-page-cover-section{
+		padding: 60px 0;
+		margin-top: 0;
+	}
+	.heading-page-section{
+		margin-top: 0;
+	}
+	.heading-page-title,
+	.heading-page-cover-section .heading-page-title{
+		font-size: 1.5em;
+	}
+	.heading-page-subtitle,
+	.heading-page-cover-section .heading-page-subtitle{
+		font-size: 1.1em;
+	}
+	.parallax-section .container{
+		width: 100%;
+	}
+}	
+/* Smartphones */
+@media only screen and (max-width : 767px) {
+/* ========= General Settings & Helper Classes ============= */
+	.no-phone-view{
+		display: none;
+	}
+	/*******************************************************
+	********************* General settings
+	*******************************************************/
+	h1 { font-size: 1.8em;}
+	h2 { font-size: 1.5em;}
+	h3 { font-size: 1.3em;}
+	h4 { font-size: 1.2em;}
+	h5 { font-size: 1em;}
+
+	/*******************************************************
+	********************* HELPER CLASSES
+	*******************************************************/
+	.border-body{
+		padding: 0;
+	}
+	.w-border-top,
+	.w-border-right,
+	.w-border-bottom,
+	.w-border-left,
+	.g-border-top,
+	.g-border-right,
+	.g-border-bottom,
+	.g-border-left,
+	.b-border-top,
+	.b-border-right,
+	.b-border-bottom,
+	.b-border-left{
+		display: none;
+	}
+	.section-title{
+		font-size: 1.8em;
+	}
+	.section-box-title{
+		padding: 30px 0;
+	}
+	.section-box-title h1{
+		margin-top: 0;
+	}
+	/*******************************************************
+	*********************  HEADER
+	*******************************************************/
+	.tool-navigation{
+		display: none;
+	}
+	.intro-sub-title{
+		font-size: 1.4em;
+	}
+	.scroll-icon{
+		display: none;
+	}
+	/*******************************************************
+	********************* INTRO
+	*******************************************************/
+	.intro-huge-title{
+		font-size: 2.8em;
+	}
+	/*******************************************************
+	********************* PORTFOLIO
+	*******************************************************/
+	#portfolio-filter {
+		text-align: left;
+	}
+	#portfolio-filter li {
+		margin-bottom: 8px;
+	}
+	.portfolio-container .portfolio-item,
+	.portfolio-container-full-5 .portfolio-item,
+	.portfolio-container-full-6 .portfolio-item {
+		width: 49%;
+	}
+	.portfolio-gutters-4 .portfolio-item,
+	.portfolio-gutters-3 .portfolio-item,
+	.portfolio-gutters-2 .portfolio-item {
+		width: 49%;
+	}
+	.portfolio-item-caption .portfolio-item-title,
+	.portfolio-drag-item-title {
+		font-size: 1.1em;
+	}
+	.sidebar-widgets {
+		padding: 0;
+	}
+	.blog-pagination {
+		margin-bottom: 30px;
+	}
+	.project-details{
+		padding-left: 0;
+	}
+	/*******************************************************
+	********************* BLOG
+	*******************************************************/
+	.blog-article-title,
+	.link-post-type .blog-article-title {
+		font-size: 1.8em;
+	}
+	.link-post-type .blog-article-title {
+		margin-top: 15px;
+	}
+	.comment-reply{
+		margin-bottom: 40px;
+	}
+	.blog-article-comments-count, .blog-article-read-more{
+		width: 40px;
+		height: 40px;
+	}
+	.blog-article-read-more i{
+		font-size: 1.3em;
+		line-height: 40px;
+	}
+	.blog-article-comments-count i{
+		font-size: 1.2em;
+		margin-top: 5px;
+	}
+	.blog-article-comments-count span{
+		font-size: .8em;
+	}
+	.blog-masonry-article{
+		width: 100%;
+	}
+	.blog-masonry-list li{
+		width: 100%;
+	}
+	.blog-listed-title{
+		font-size: 1.2em;
+		height: auto;
+		line-height: 140%;
+	}
+	/*******************************************************
+	********************* QUOTE
+	*******************************************************/
+	.quote-slider ul li p,
+	.quote-slider-trans ul li p {
+		font-size: 1.4em;
+	}
+	
+	/*******************************************************
+	********************* CONTACT
+	*******************************************************/
+	.contact-form-wrap{
+		margin: 20px 0;
+	}
+	.input-container,
+	.comment-reply .input-container{
+		width: 100%;
+		margin-right: 0;
+	}
+	/*******************************************************
+	*********************  SHORTCODES
+	*******************************************************/
+	/* LINK SECTION */
+	.m-link-section-title{
+		font-size: 1.2em;
+	}
+	.m-accordion{
+		margin-top: 20px;
+	}
+}
+
+@media only screen and (max-width : 480px) {
+	/*******************************************************
+	********************* HEADER
+	*******************************************************/
+	.header-container{
+		padding: 0;
+	}
+	/*******************************************************
+	********************* PORTFOLIO
+	*******************************************************/
+	.portfolio-container .portfolio-item,
+	.portfolio-gutters-4 .portfolio-item,
+	.portfolio-gutters-3 .portfolio-item,
+	.portfolio-gutters-2 .portfolio-item,
+	.portfolio-container-full-5 .portfolio-item,
+	.portfolio-container-full-6 .portfolio-item {
+		width: 100%;	
+	}
+	/*******************************************************
+	********************* BLOG
+	*******************************************************/
+	.blog-masonry-list li{
+		width: 100%;
+	}
+	.blog-article-masonry{
+		width: 100%;
+	}
+	.blog-article .blog-article-header{
+		margin-bottom: 20px;
+	}
+	.blog-article-title{
+		font-size: 1.5em;
+	}
+	.blog-article-media-type{
+		display: none;
+	}
+	.blog-article-info span{
+		width: 100%;
+		display: block;
+		margin-bottom: 8px;
+	}
+	.blog-article-container,
+	.blog-articles-container{
+		padding: 0;
+	}
+	.blog-article .blog-article-content{
+		padding: 15px;
+	}
+	.author-info-avatar,
+	.comment-author{
+		display: none;
+	}
+	.blog-article.article-quote p{
+		padding-left: 20px;
+	}
+	/*******************************************************
+	********************* SHOP
+	*******************************************************/
+	.cart img{
+		width: 30px;
+	}
+	.cart .cancel{
+		width: auto;
+		border: none;
+		height: auto;
+		line-height: 100%;
+	}
+	/*******************************************************
+	********************* SHORTCODES
+	*******************************************************/
+	.m-team-member,
+	.m-features-item,
+	.counter-item{
+		width: 100%;
+	}
+}
